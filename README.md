@@ -29,7 +29,7 @@ O `index.html` é **autossuficiente**: o logo, o estilo e o código já estão d
 - Seletor de idioma **PT | EN**. Na primeira visita, o idioma vem do celular do cliente; a escolha fica salva no aparelho.
 - Busca nos dois idiomas, com contador de resultados.
 - Barra de categorias fixa, com destaque automático da categoria visível.
-- Botões **WhatsApp** e **Ligar**, e rodapé com endereço, "Como chegar" (rota no mapa) e link para o site da pousada.
+- Rodapé com telefone, endereço, "Como chegar" (rota no mapa) e link para o site da pousada.
 - Botão "voltar ao topo".
 - Acessibilidade básica: rótulos, foco visível, respeito a "reduzir movimento".
 - Otimizado para mobile: alvos de toque de 44px, `touch-action: manipulation` (sem atraso de duplo toque), áreas seguras de notch, `content-visibility` (seções fora da tela não são renderizadas, economizando bateria em celulares modestos) e favicon embutido.
@@ -74,9 +74,7 @@ Cada **item** tem 4 posições, nesta ordem: `nome`, `inglês impresso`, `descri
 
 ### 4.3 Contato
 
-Procure por `5573998430336` (aparece 2 vezes: link do WhatsApp e link de ligação) e por `(73) 99843-0336` (texto do rodapé). O formato do número no link é código do país + DDD + número, sem espaços: **55 73 99843-0336**. O número foi conferido com o site da pousada.
-
-A mensagem inicial do WhatsApp está em `UI` (chave `wa`, em PT e EN) e é aplicada ao link `wa.me` automaticamente ao trocar de idioma.
+Procure por `5573998430336` (link de ligação no rodapé) e por `(73) 99843-0336` (texto do rodapé). O formato do número no link é código do país + DDD + número, sem espaços: **55 73 99843-0336**. O número foi conferido com o site da pousada.
 
 ### 4.4 Endereço e links
 
@@ -93,7 +91,7 @@ O logo está embutido no `index.html` (campo `--m:url(data:image/png;base64,...)
 ## 5. Como testar no computador
 
 1. Dê dois cliques no `index.html`, e ele abre no navegador.
-2. Confira: troca PT/EN, busca (ex.: "camarão", "shrimp", "tinto"), toque nas categorias, botões de WhatsApp e Ligar, rodapé.
+2. Confira: troca PT/EN, busca (ex.: "camarão", "shrimp", "tinto"), toque nas categorias, rodapé.
 3. No celular, envie o arquivo (ou, melhor, teste depois de publicar) e confira rolagem, teclado da busca e modo escuro.
 
 ## 6. Como publicar e criar o QR Code
@@ -130,7 +128,6 @@ Também funciona qualquer gerador de QR Code confiável que ofereça arquivo em 
 - [ ] Traduções em inglês revisadas pelo restaurante. As que não estavam no impresso foram feitas por nós: bebidas, frozens, hambúrgueres, Prato Kids, vinhos e nomes de categorias como "Burgers" e "Sides". Também "2 scoops" no Sorvete Caseiro (o impresso diz "2 balls").
 - [x] Aviso de protótipo no topo: removido.
 - [ ] Nomes dos vinhos conferidos (copiados como impressos, inclusive "Rosseto" e "Ca´del Borgo").
-- [ ] Número de WhatsApp testado de um celular.
 - [ ] Teste em iPhone e Android reais.
 - [ ] Decisão sobre alergênicos, horário e fotos.
 
